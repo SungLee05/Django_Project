@@ -36,4 +36,3 @@ If you have any questions or would like to get in touch, please see my contact i
         </tr>
       </tbody>
   </table>
-{"mode":"full","isActive":false}
