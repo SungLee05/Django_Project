@@ -1,10 +1,15 @@
 from pathlib import Path
 import os
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-n7@x)1bo*)jfub^ai3!l2^q9@f1yihwhmz*jpa-y_yl#pu&-is'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -61,8 +66,11 @@ WSGI_APPLICATION = 'greenleaf.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'sunglee',
+        'USER': 'sunglee',
+        'PASSWORD': env('DATABASE_PW'),
+        'HOST': 'localhost',
     }
 }
 
