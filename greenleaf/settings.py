@@ -67,8 +67,8 @@ WSGI_APPLICATION = 'greenleaf.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sunglee',
-        'USER': 'sunglee',
+        'NAME': env('DATABASE_NAME'),
+        'USER': env('DATABASE_USERNAME'),
         'PASSWORD': env('DATABASE_PW'),
         'HOST': 'localhost',
     }
