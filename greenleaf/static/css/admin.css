@@ -1,0 +1,33 @@
+#header {
+    height: 50px;
+    background: #10284e;
+    color: #fff;
+}
+
+#branding h1 {
+    color: #fff;
+}
+
+a:link, a:visited {
+    color:#fff
+}
+
+div.breadcrumbs {
+    background: #30caa0;
+    color: #10283e;
+}
+
+div.breadcrumbs a {
+    color: #333
+}
+
+body.dashboard {
+    background: #fff
+}
+
+#content-related {
+    background: rgb(63, 102, 111)
+}
+#content h1 {
+    color: black
+}
