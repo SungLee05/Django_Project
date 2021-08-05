@@ -31,3 +31,12 @@ body.dashboard {
 #content h1 {
     color: black
 }
+
+.module h2, .module caption, .inline-group h2 {
+    background: #30caa0
+}
+
+.button, input[type=submit], input[type=button], .submit-row inpit, a.button {
+    background: #10284e;
+    color: #fff
+}
